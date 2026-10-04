@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lockout Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: -apple-system, Segoe UI, Roboto, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; color: #222; line-height: 1.6; background: #fafafa; }
+  h1 { font-size: 1.6em; } h2 { font-size: 1.15em; margin-top: 28px; }
+  code { background: #eee; padding: 1px 5px; border-radius: 4px; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; }
+  th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid #ddd; font-size: 0.95em; }
+  th { color: #555; font-weight: 600; }
+  a { color: #b83a0e; }
+  footer { margin-top: 48px; color: #777; font-size: 0.85em; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e6e5df; background: #141413; }
+    code { background: #2a2a27; }
+    th, td { border-bottom-color: #34342f; }
+    th { color: #b0afa7; }
+    a { color: #ff8a5c; }
+    footer { color: #8a8a82; }
+  }
+</style>
+</head>
+<body>
+<h1>Lockout Privacy Policy</h1>
+<p><strong>Last updated:</strong> October 3, 2026</p>
+
+<p>Lockout ("the App") is a focus app that locks your phone for a set time. It is published by AnskaitisGroup S.L.</p>
+
+<h2>The short version</h2>
+<p>Lockout has no account system, no analytics, no advertising and no tracking of any kind. Everything it records &mdash; your sessions, your streak, your settings &mdash; stays on your device. We never see it, and neither does anyone else.</p>
+
+<h2>Data we collect</h2>
+<p><strong>None.</strong> We operate no servers for this App and receive no data from it.</p>
+
+<h2>Data stored on your device</h2>
+<p>The following is written to the App's private storage on your phone and never transmitted:</p>
+<ul>
+  <li>Lockdown history (date, length and hour of completed sessions)</li>
+  <li>Your streak and daily-goal progress</li>
+  <li>The Kit (which apps you allow during a Lockdown)</li>
+  <li>Key balance and how many keys you have used</li>
+  <li>App settings (theme, haptics, reminders, hard lock, routines, your custom lock-screen line)</li>
+</ul>
+<p>Lockout opts out of Android's cloud backup, so none of this is copied to Google Drive or any other service. You can delete all of it at any time by clearing the App's storage or uninstalling the App.</p>
+
+<h2>Accessibility service</h2>
+<p>Lockout uses Android's accessibility service for a single purpose: while a Lockdown is running, it observes which app has come to the foreground so the lock screen can be brought back when that app is locked.</p>
+<ul>
+  <li>It receives one event type only (<code>typeWindowStateChanged</code>) and reads only the package name of the foreground app.</li>
+  <li>It is declared with <code>canRetrieveWindowContent="false"</code>: it cannot read screen content, text fields, messages or passwords, and it does not.</li>
+  <li>It performs no action other than showing Lockout's own lock screen.</li>
+  <li>Nothing it observes is stored, logged off-device or transmitted.</li>
+</ul>
+<p>You choose whether to turn it on, after reading a plain explanation inside the App. Without it Lockout cannot enforce a lock at all. You can revoke it at any time in Android Settings &rsaquo; Accessibility.</p>
+
+<h2>Permissions</h2>
+<table>
+  <tr><th>Permission</th><th>Why</th></tr>
+  <tr><td>Accessibility service</td><td>Bring the lock screen back during a Lockdown (see above)</td></tr>
+  <tr><td><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>, <code>com.android.vending.BILLING</code></td><td>Only so Google Play Billing can reach the Play Store (the last two are added by Google's billing library); nothing else uses the network</td></tr>
+  <tr><td><code>POST_NOTIFICATIONS</code></td><td>The countdown notification and the optional evening reminder</td></tr>
+  <tr><td><code>RECEIVE_BOOT_COMPLETED</code></td><td>Re-arm a running Lockdown and your routines after a reboot</td></tr>
+  <tr><td><code>VIBRATE</code></td><td>Haptic feedback on the dial and buttons</td></tr>
+</table>
+<p>Lockout does not request usage access, location, contacts, storage, camera, microphone or the advertising ID.</p>
+
+<h2>Purchases</h2>
+<p>Key packs and Lockout Pro are sold through Google Play's billing system. The purchase itself is handled entirely by Google; we receive no payment details. Lockout stores only a local record of what you own so your Pro status survives a reinstall (restored through Google Play). Keys are a consumable kept on your device. Google's handling of purchase data is governed by the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+<p>When a Lockdown is running and you have no keys left, you can still buy more from the lock screen. For the few minutes a purchase takes, Lockout lets Google Play's payment sheet open on top of the lock; nothing else is unlocked, and the Lockdown carries on afterwards.</p>
+
+<h2>Notifications</h2>
+<p>Lockout can post two kinds of notification: the countdown while a Lockdown is running, and &mdash; if you enable it &mdash; an evening reminder when the day has no completed Lockdown. Both are generated on your device.</p>
+
+<h2>Children's privacy</h2>
+<p>Lockout is not directed at children and collects no data from anyone, including children.</p>
+
+<h2>Your rights</h2>
+<p>Because we collect no personal data, there is nothing for us to access, correct, export or erase on your behalf. If you email us, we use your address only to reply.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the updated version will be published at this URL, with a new "last updated" date.</p>
+
+<h2>Contact</h2>
+<p>AnskaitisGroup S.L. &mdash; <a href="mailto:info@iaengineering.net">info@iaengineering.net</a></p>
+
+<footer>AnskaitisGroup S.L. &mdash; Lockout</footer>
+</body>
+</html>
