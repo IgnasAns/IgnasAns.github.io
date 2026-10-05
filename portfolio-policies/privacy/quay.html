@@ -20,7 +20,7 @@
 <dt>Package name</dt><dd>com.iaengineering.wharftycoon</dd>
 <dt>Developer</dt><dd>Ignas Anskaitis, an individual developer</dd>
 <dt>Contact</dt><dd><a href="mailto:ianskaitis@gmail.com">ianskaitis@gmail.com</a></dd>
-<dt>Effective date</dt><dd>30 September 2026</dd>
+<dt>Effective date</dt><dd>5 October 2026 (version 2.1)</dd>
 </dl>
 </div>
 
@@ -31,26 +31,55 @@ this policy. If you do not agree, please uninstall the app.</p>
 
 <h2>Summary</h2>
 <p>Your game progress is stored locally on your device. The app has no account system and no
-sign-in, collects no personal information for the developer, and never sells or shares your
-personal data. The app shows <strong>no forced advertising of any kind</strong> &#8212; no banners, no
+sign-in, never asks for your name or email, and never sells your data. The app shows
+<strong>no forced advertising of any kind</strong> &#8212; no banners, no
 interstitials, no pop-ups. It contains an optional, clearly labelled &#8220;watch a video ad&#8221;
 feature that you only ever choose to watch yourself, served by Google AdMob, and optional in-app
-purchases (one-time unlocks and repeatable coin packs) processed by Google Play. Those Google
-services are the only third parties that ever receive data from the app, and only when you use
-the related feature or consent to it.</p>
+purchases (one-time unlocks and repeatable coin packs) processed by Google Play. From version 2.1
+the app also sends <strong>anonymous usage statistics</strong> to Google&#8217;s Firebase Analytics
+(game events such as &#8220;finished tutorial step 3&#8221; or &#8220;reached goal 7&#8221;, never your
+name, your save game or anything you type) so the game can be improved; you can switch them off at any
+time in <em>Settings &gt; Game progress</em>, and in the European Economic Area and the United Kingdom
+they follow your consent choice. Those Google services are the only third parties that ever receive
+data from the app, and only when you use the related feature or consent to it.</p>
 
 <h2>Information the developer collects</h2>
-<p>Nothing. The developer of Fisherman&#x27;s Wharf Tycoon does not collect, receive, store,
-sell, rent or share any personal information about you. Specifically, the app does not send
-the developer:</p>
+<p>The developer of Fisherman&#x27;s Wharf Tycoon does not collect your name, email address or any other
+direct identifier, and does not sell, rent or share any personal information about you. The only data the
+developer receives is the <strong>anonymous usage statistics</strong> described in the next section, which
+the developer can see only as reports in Google&#8217;s Firebase / Google Analytics console. Specifically,
+the app does not send the developer:</p>
 <ul>
 <li>your name, email address, phone number or postal address;</li>
 <li>your contacts, calendar, photos, files or messages;</li>
-<li>your location, precise or approximate;</li>
-<li>your usage behaviour, gameplay logs or crash reports.</li>
+<li>your precise location;</li>
+<li>your save game or anything you type.</li>
 </ul>
-<p>The app has no account system, no analytics SDK of the developer&#8217;s own, and no
-crash-reporting SDK. There is no server operated by the developer that could receive your data.</p>
+<p>The app has no account system and no crash-reporting SDK. The developer operates no server of their
+own that receives data from the app.</p>
+
+<h2>Anonymous usage statistics (Firebase Analytics, version 2.1 and later)</h2>
+<p>To learn how the game is played &#8212; for example where new players get stuck or whether the game runs
+smoothly on older phones &#8212; the app reports a small, fixed set of <strong>game events</strong> to
+<strong>Firebase Analytics</strong>, a Google service. An event is a short label with a few numbers or short
+codes, for example &#8220;tutorial step 3 reached after 95 seconds&#8221;, &#8220;goal 7 completed&#8221;,
+&#8220;graphics quality was lowered&#8221;, &#8220;a rewarded ad was watched&#8221;, or &#8220;product
+X was purchased&#8221; (with its price and currency, never your payment details). Events never contain your name,
+email, contacts, files, messages, save game, anything you type, or your exact location.</p>
+<p>Firebase also records standard technical information automatically: an app-instance identifier generated
+for this installation, the Android advertising ID (only if you consented and your device allows it),
+device model, Android version, language, app version, the approximate location derived from your IP address
+(country and city), and when and how long the app is used. Google processes this data for the developer
+under Google&#8217;s terms; the developer sees aggregated reports and cannot look you up by name.</p>
+<p><strong>Your control.</strong> In the European Economic Area and the United Kingdom nothing is linked to
+you unless you agree in Google&#8217;s consent form, which you can reopen at any time through
+&#8220;Privacy options&#8221; in the game&#8217;s settings; until you answer (or if you never see the form), the app
+sends only anonymous, cookie-less pings with every consent signal denied. Everywhere you can switch the
+statistics off completely with <em>Settings &gt; Game progress &gt; Turn usage statistics off</em>; the choice
+is remembered. Resetting your advertising ID in your device&#8217;s settings (Android: Settings&nbsp;&gt;&nbsp;Privacy&nbsp;&gt;&nbsp;Ads)
+also separates new statistics from old. Google keeps event-level data for a limited period set by the
+developer (at most 14 months). Google&#8217;s privacy information for Firebase is at
+<a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer nofollow">https://firebase.google.com/support/privacy</a>.</p>
 
 <h2>Information you enter, and where it is stored</h2>
 <p>Everything you create in Fisherman&#x27;s Wharf Tycoon &#8212; your save game, settings and
@@ -65,11 +94,11 @@ by that provider&#8217;s own terms and privacy policy, not by this app.</p>
 
 <h2>Technical diagnostics kept on your device</h2>
 <p>To help debug problems, the app keeps a small technical log (for example error codes and
-performance events such as save recovery) <strong>on your device only</strong>. This log never leaves
-your device automatically. It can only leave your device if you deliberately use the export
+performance events such as save recovery) <strong>on your device</strong>. This log is not sent anywhere
+by itself. It can only leave your device if you deliberately use the export
 feature in the game&#8217;s settings and choose to share the exported file yourself &#8212; for example
-by emailing it to the developer to report a bug. Nothing is transmitted without that explicit
-action by you.</p>
+by emailing it to the developer to report a bug. The same switch that turns off the usage statistics
+(<em>Settings &gt; Game progress</em>) also stops this log.</p>
 
 <h2>Advertising (optional rewarded ads only)</h2>
 <p>The app contains <strong>no banners, no interstitials, no pop-up ads and no ads of any kind that
@@ -112,11 +141,13 @@ available at
 <a href="https://policies.google.com/privacy" rel="noopener noreferrer nofollow">https://policies.google.com/privacy</a>.</p>
 
 <h2>Network use</h2>
-<p>The game itself works completely offline. Network connections happen only in three cases:
+<p>The game itself works completely offline. Network connections happen only in four cases:
 when a rewarded ad is loading (including in the background, ahead of time) or playing (Google AdMob),
-when the consent form needs to load or record your advertising choices (Google), and when the app
-checks, prices, starts or restores an in-app purchase (Google Play). Apart from those Google services,
-the app does not transmit your data anywhere. The developer&#8217;s own systems receive nothing.</p>
+when the consent form needs to load or record your advertising choices (Google), when the app
+checks, prices, starts or restores an in-app purchase (Google Play), and when it sends the anonymous
+usage statistics described above (Google Firebase Analytics), unless you switched them off. Apart from
+those Google services, the app does not transmit your data anywhere, and the developer runs no server
+of their own that receives it.</p>
 
 <h2>Notifications</h2>
 <p>Fisherman&#x27;s Wharf Tycoon does not currently send push notifications. If a future update
@@ -128,16 +159,16 @@ or opt-in, and this policy will be updated first.</p>
 those permissions are used on your device. The app does not use permissions to
 collect or transmit personal data to the developer. They are: network access and network-state access
 (used only for the Google services described above), the Google advertising ID permission (used by Google
-AdMob, subject to your consent choices and your device settings), Google Play Billing, and vibration for
+AdMob and Firebase Analytics, subject to your consent choices and your device settings), Google Play Billing, and vibration for
 short haptic feedback, which you can switch off in the game&#8217;s settings.</p>
 
 <h2>Children&#8217;s privacy</h2>
 <p>Fisherman&#x27;s Wharf Tycoon is not directed at children under the age of 13. The app is intended for a
 general audience, and the developer does not knowingly collect any personal
 information from children under 13 &#8212; the developer receives no personal information from
-anyone at all. If you believe a child under 13 has used the app, you can remove all data
-created by the app by uninstalling it; if you have any concern, please contact the
-developer at <a href="mailto:ianskaitis@gmail.com">ianskaitis@gmail.com</a>.</p>
+anyone at all &#8212; the anonymous usage statistics contain no direct identifiers. If you believe a child under 13
+has used the app, you can remove all data created by the app by uninstalling it; if you have any concern,
+please contact the developer at <a href="mailto:ianskaitis@gmail.com">ianskaitis@gmail.com</a>.</p>
 
 <h2>Your control over your data, and deletion</h2>
 <p>You are in full control of the information in Fisherman&#x27;s Wharf Tycoon, because it lives on your
@@ -147,19 +178,23 @@ device. You can delete it at any time by either of these methods:</p>
 <li>uninstalling the app, which removes the app and its locally stored data from your
 device.</li>
 </ul>
-<p>Because the developer never receives your data, there is no copy of it held by the
-developer to delete, export or correct, and no deletion request needs to be sent.
-Uninstalling the app or using the in-app reset is complete and final. Data held by Google
-(such as your advertising or consent choices) is controlled from your Google and device
+<p>The developer holds no copy of your save game, so there is nothing of it to delete, export or correct.
+Uninstalling the app or using the in-app reset removes everything stored on your device. The anonymous usage
+statistics are stored by Google under an installation identifier, not under your name or email, so the developer
+cannot tell which statistics are yours: you can stop new statistics at any time
+(<em>Settings &gt; Game progress &gt; Turn usage statistics off</em>), uninstalling the app or resetting your advertising ID
+separates you from the old ones, and Google deletes event-level data automatically when the retention period (at most
+14 months) ends. Data held by Google (such as your advertising or consent choices) is controlled from your Google and device
 settings as described above. If you would
-like help with deleting data, or have any question about it, you can email the
+like help with any of this, or have any question about it, you can email the
 developer at <a href="mailto:ianskaitis@gmail.com">ianskaitis@gmail.com</a>.</p>
 
 <h2>Data security</h2>
 <p>Your data is protected by your device&#8217;s own security, including any screen lock,
-device encryption and operating-system protections you have enabled. Because the data
-is not transmitted to the developer, there is no developer-held database that could
-be breached. You should keep your device&#8217;s operating system up to date and use a
+device encryption and operating-system protections you have enabled. Because the game
+data is not transmitted to the developer, there is no developer-held database of it that could
+be breached; data sent to Google (ads, purchases, usage statistics) travels over encrypted connections.
+You should keep your device&#8217;s operating system up to date and use a
 screen lock to protect the data on your device.</p>
 
 <h2>Third-party services</h2>
@@ -171,9 +206,11 @@ consent choices;</li>
 <li><strong>Google consent management (UMP)</strong> &#8212; records and stores your advertising consent
 choices on your device;</li>
 <li><strong>Google Play Billing</strong> &#8212; processes the optional in-app purchases (one-time unlocks
-and coin packs) only if you choose to buy them, and confirms which purchases you already own.</li>
+and coin packs) only if you choose to buy them, and confirms which purchases you already own;</li>
+<li><strong>Google Firebase Analytics</strong> &#8212; receives the anonymous usage statistics described above
+(version 2.1 and later), unless you switched them off or have not consented where consent is required.</li>
 </ul>
-<p>Fisherman&#x27;s Wharf Tycoon does not include analytics providers, data brokers,
+<p>Fisherman&#x27;s Wharf Tycoon does not include any other analytics provider, data broker,
 or social-media tracking, and none of these services receive your game progress or
 personal information from the developer. This privacy-policy website contains no cookies,
 no analytics and no tracking scripts.</p>
@@ -191,7 +228,7 @@ Email: <a href="mailto:ianskaitis@gmail.com">ianskaitis@gmail.com</a></p>
 
 <hr>
 <p class="lede">This policy applies to the Android app <strong>Fisherman&#x27;s Wharf Tycoon</strong>
-(package name <strong>com.iaengineering.wharftycoon</strong>) and was last updated on 30 September 2026.</p>
+(package name <strong>com.iaengineering.wharftycoon</strong>) and was last updated on 5 October 2026 (version 2.1: anonymous usage statistics via Firebase Analytics).</p>
 <footer>
 <p><a href="../index.html">All apps and privacy policies</a></p>
 </footer>
