@@ -18,7 +18,7 @@ Live site: https://ignasans.github.io/portfolio-policies/
 | Code | App | Package name | Policy |
 | --- | --- | --- | --- |
 | `quartz` | Subly — Subscription Tracker | `com.ianskaitis.quartz` | [privacy/quartz.html](privacy/quartz.html) |
-| `ember` | Blinkwell — Eye Break Timer | `com.ianskaitis.ember` | [privacy/ember.html](privacy/ember.html) |
+| `unforced` | Unforced — Tennis Leagues (replaced Blinkwell on this package) | `com.ianskaitis.ember` | [privacy/unforced.html](privacy/unforced.html) |
 | `atlas` | Garage Log — Car Maintenance | `com.ianskaitis.atlas` | [privacy/atlas.html](privacy/atlas.html) |
 | `pylon` | Hourly — Timesheet & Pay | `com.ianskaitis.pylon` | [privacy/pylon.html](privacy/pylon.html) |
 | `harbour` | Haven — Home Inventory | `com.ianskaitis.harbour` | [privacy/harbour.html](privacy/harbour.html) |
