@@ -14,18 +14,40 @@
 <body>
 <h1>Ardenhold privacy policy</h1>
 <p><strong>Effective date:</strong> 2 November 2026</p>
-<p>Ardenhold is an offline castle sim. It does not collect, transmit, sell or share personal data.</p>
+<p>Ardenhold is a single-player castle sim. There is no account and no game server. From version 1.1.0 the Android app can send anonymous play statistics to the developer, but only if you agree. If you don't, it sends nothing; version 1.0 sends nothing at all.</p>
+
+<h2>Play statistics (optional, off until you agree)</h2>
+<p>The Android game asks once, when it first opens, whether to share play statistics. Nothing is sent before you answer, or if you choose "Don't share". You can change your answer at any time under <strong>Play statistics</strong> in the pause menu.</p>
+<p>If you choose "Share", the game reports these events through Google Analytics for Firebase:</p>
 <ul>
-<li><strong>No account.</strong> There is no sign-in, profile, cloud sync or online service.</li>
-<li><strong>No game servers.</strong> The game never contacts a server of its own. The Android app includes Google's Play Billing library for its one optional purchase; that library needs the internet and network-state permissions to talk to the Google Play Store app on your device. The game sends nothing through it.</li>
-<li><strong>One optional purchase.</strong> The Full Campaign is a one-time purchase handled entirely by Google Play. The developer never sees your payment details. The app keeps only a note, on your device, that the campaign is unlocked. Google's privacy policy covers the purchase itself.</li>
-<li><strong>No advertising, analytics or tracking.</strong> There are no ad SDKs, telemetry or crash-reporting SDKs, and nothing else that phones home.</li>
-<li><strong>Local files only.</strong> The save slot, campaign ledger and settings are stored on your device, in the app's private storage. Uninstalling the app removes them.</li>
-<li><strong>No personal data is requested.</strong> The game does not ask for a name, email, location, contacts, photos or device identifiers.</li>
+<li>a chapter started: which chapter, and how many times it has been started on this device;</li>
+<li>a chapter ended: won, lost or left, and how long it took;</li>
+<li>the unlock panel opened, and from where (for example, a locked chapter);</li>
+<li>a purchase started, completed or restored: the product only.</li>
 </ul>
-<p>If you contact the developer through the store listing, the store's own messaging system handles that conversation under the store's privacy terms. Nothing from it is added to the game.</p>
+<p>Google Analytics adds what it collects by itself: a random app-instance ID made on your device, the first launch, sessions and time in the app, the purchase (product and price), your device model, Android version, language and app version, and an approximate location (country, region, city) worked out from a masked IP address.</p>
+<p>The game never sends your name, email, contacts, precise location, payment details or advertising ID. Advertising ID collection is switched off and its permission removed, every advertising consent type stays denied, and Google signals and Google's data-sharing settings are off for this game.</p>
+<ul>
+<li><strong>Why:</strong> to see which chapters players finish, where they stop, and whether the unlock panel helps or gets in the way, so the game can be improved. Not for advertising, and never sold.</li>
+<li><strong>Who handles it:</strong> Google provides the analytics service, under the <a href="https://marketingplatform.google.com/about/analytics/terms/us/">Google Analytics terms</a> and <a href="https://policies.google.com/privacy">Google's privacy policy</a> (see also <a href="https://policies.google.com/technologies/partner-sites">how Google uses information from apps that use its services</a>). The data travels encrypted (TLS) and may be processed on Google's servers outside your country.</li>
+<li><strong>How long:</strong> Google Analytics keeps the event data for up to 14 months, then deletes it. The developer sees reports of totals, not a record per player.</li>
+<li><strong>Legal basis (EU and UK):</strong> your consent. Withdrawing it in the pause menu stops collection at once and resets the app-instance ID on your device, so anything sent later, if you agree again, cannot be linked to what came before.</li>
+<li><strong>Deletion:</strong> the statistics carry no name or account, so the developer cannot tell which records are yours. Turning statistics off, or uninstalling the game, ends collection; what was already sent expires within 14 months.</li>
+<li><strong>Children:</strong> players under 16 should ask a parent or guardian before choosing "Share".</li>
+</ul>
+
+<h2>Purchases</h2>
+<p>The Full Campaign is a one-time purchase handled entirely by Google Play. The developer never sees your payment details. The app keeps only a note, on your device, that the campaign is unlocked. Google's privacy policy covers the purchase itself.</p>
+
+<h2>On your device</h2>
+<p>The save slot, the campaign ledger (finished chapters, and how often each was started), your settings and your play-statistics answer are stored in the app's private storage. Uninstalling the app removes them.</p>
+
+<h2>Permissions</h2>
+<p>The Android app holds <code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>, <code>WAKE_LOCK</code>, Play's billing permission and Play's install-referrer service, all added by Google Play Billing and Google Analytics for Firebase. It asks for nothing else: no location, contacts, camera, microphone, storage or advertising ID.</p>
+
+<h2>Contact and changes</h2>
+<p>If you contact the developer through the store listing, the store's own messaging system handles that conversation under the store's privacy terms. Nothing from it is added to the game. Questions about this policy can be sent to the developer contact address shown on the store listing.</p>
 <p>The game contains stylised medieval combat: units fall and buildings collapse, without blood or gore. It is intended for a general strategy audience.</p>
-<p>Questions about this policy can be sent to the developer contact address shown on the store listing.</p>
-<p>Changes to this policy will be published with a new effective date in the store listing and in the repository.</p>
+<p>Changes to this policy will be published with a new date in the store listing and in the repository.</p>
 </body>
 </html>
